@@ -1,0 +1,44 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.group-desc {
+  /* Styles for GroupDesc component */
+}
+
+.card-container {
+  display: flex;
+}
+
+.card-column {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.suggestions-column {
+  flex: 1;
+  padding: 20px;
+}
+
+
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .card-column{
+    width: 100%;
+  }
+  .suggestions-column{
+    display: none;
+  }
+}
